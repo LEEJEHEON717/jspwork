@@ -5,11 +5,11 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>welcome~</title>
 </head>
 <body>
 	<h2>Hello~ 안녕!</h2>
-	<%-- jsp 출력 <%= %> --%> 
-	<p>현재 날짜와 시간은 <%=new Date() %></p>
+	<%-- jsp 출력 <%=  %> --%>
+	<p>현재 날짜와 시간은 <%= new Date() %></p>
 </body>
 </html>
