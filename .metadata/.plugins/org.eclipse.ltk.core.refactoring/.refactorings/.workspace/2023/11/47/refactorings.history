@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;jsjs&apos;" deleteContents="false" description="Delete resource &apos;jsjs&apos;" element1="/jsjs" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1700444046321"/>&#x0A;<refactoring comment="Delete resource &apos;jwbook/src/main/webapp/resources/js/NewFile.jsp&apos;" deleteContents="false" description="Delete resource &apos;jwbook/src/main/webapp/resources/js/NewFile.jsp&apos;" element1="/jwbook/src/main/webapp/resources/js/NewFile.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1700449703333"/>
-</session>
