@@ -9,6 +9,9 @@
 <jsp:useBean id="abDAO" class="addressbook.AddrBookDAO" scope="application"/>
 <%
 	abDAO.addAddrBook(addrBook); //주소 추가
+	//회원 가입후 자동로그인
+	session.setAttribute("sessionId", addrBook.getEmail());
+	session.setAttribute("sessionName", addrBook.getUsername());	
 %>
 	<div id = "contaniner">
 		<h2>등록 내용</h2>

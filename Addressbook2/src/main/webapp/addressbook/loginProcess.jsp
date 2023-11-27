@@ -4,9 +4,13 @@
 <%
 	String email = request.getParameter("email");
 	boolean result = abDAO.checkLogin(email);
+	String name = abDAO.getNameByEmail(email); //이메일을 매개변수로 이름(username) 가져옴
 	
-	if(result){  //이메일이 있으면 세션 발급(세션이름 - sessionId)
+	if(result){
+		//인증이 되었으면 세션 발급(세션이름 - sessionId)
+		//이름 세션 발급
 		session.setAttribute("sessionId", email);
+		session.setAttribute("sessionName", name);
 		response.sendRedirect("addrList.jsp"); //주소록 목록으로 이동
 	}else{
 		out.println("<script>");

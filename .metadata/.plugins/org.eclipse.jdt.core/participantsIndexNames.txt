@@ -35,6 +35,8 @@ C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\473199894.inde
 \jwbook2\src\main\java
 C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1354164308.index
 \jwbook\src\main\java
+C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\416836674.index
+\Addressbook2\src\main\java
 C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1990303043.index
 \jwbook\src\main\java
 C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1939434655.index
