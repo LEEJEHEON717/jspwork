@@ -2964,3 +2964,18 @@ org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 5; 주석에서는 
 	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3187)
 	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:357)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2023-11-27 15:13:17.275
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2023-11-27 15:13:28.265
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2023-11-27 15:13:58.580
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2023-11-27 15:16:37.472
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2023-11-27 15:20:08.874
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.

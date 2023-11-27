@@ -29,6 +29,10 @@ C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2925313295.ind
 \AddressBook\src\main\java
 C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2504049282.index
 \jwbook\src\main\java
+C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\114227452.index
+\jwbook2\src\main\java
+C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\473199894.index
+\jwbook2\src\main\java
 C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1354164308.index
 \jwbook\src\main\java
 C:\jspworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1990303043.index
