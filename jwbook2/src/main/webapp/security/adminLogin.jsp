@@ -14,11 +14,11 @@
 	<form action="j_security_check" method="post">
 		<ul>
 			<li>
-				<label for="uid">아이디 </label>
+				<label for="uid">아이디</label>
 				<input type="text" id="uid" name="j_username">
 			</li>
 			<li>
-				<label for="passwd">비밀번호 </label>
+				<label for="passwd">비밀번호</label>
 				<input type="password" id="passwd" name="j_password">
 			</li>
 			<li>

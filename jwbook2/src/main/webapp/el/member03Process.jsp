@@ -16,12 +16,12 @@
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="member" class="el.Member"/>
+<jsp:useBean id="member" class="el.Member" />
 <jsp:setProperty property="uid" name="member"/>
 <jsp:setProperty property="passwd" name="member"/>
 <jsp:setProperty property="uname" name="member"/>
 <body>
-	<h3>회원 정보</h3>
+	<h2>회원 정보</h2>
 	<hr>
 	<table>
 		<tr>
@@ -32,7 +32,7 @@
 			<%-- <td><%=member.getUid() %></td> --%>
 			<td>${member.uid}</td>
 			<td>${member.passwd}</td>
-			<td>${member.uname}</td>
+			<td>${member.uname} </td>
 		</tr>
 	</table>
 </body>

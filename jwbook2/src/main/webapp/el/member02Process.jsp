@@ -17,7 +17,7 @@
 	request.setCharacterEncoding("utf-8");
 %>
 <body>
-	<h3>회원 정보</h3>
+	<h2>회원 정보</h2>
 	<hr>
 	<table>
 		<tr>
@@ -27,7 +27,7 @@
 		<tr>
 			<td>${param.uid}</td>
 			<td>${param.passwd}</td>
-			<td>${param.uname}</td>
+			<td>${param.uname} </td>
 		</tr>
 	</table>
 </body>

@@ -8,10 +8,10 @@
 </head>
 <body>
 	<form action="file01Process.jsp" method="post"
-		  enctype="multipart/form-data">
+	      enctype="multipart/form-data">
 		<p>회원 이름: <input type="text" name="username"></p>
 		<p>파일 제목: <input type="text" name="title"></p>
-		<p>파일 첨부: <input type="file" name="filename">
+		<p>파일 첨부: <input type="file" name="filename"></p>
 		<input type="submit" value="전송">
 	</form>
 </body>

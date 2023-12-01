@@ -20,16 +20,15 @@ public class DataController extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//변수
+		//변수 
 		String season = "가을";
-		
 		//배열
 		String[] seasons = {"봄", "여름", "가을", "겨울"};
 		//HashMap 자료 - key: value
 		Map<String, Object> car = new HashMap<>();
 		car.put("brand", "Sonata");
 		car.put("cc", 3000);
-			
+		
 		//모델(model)
 		request.setAttribute("season", season);
 		request.setAttribute("seasons", seasons);

@@ -7,10 +7,10 @@
 <!DOCTYPE html>
 <%
 	request.setCharacterEncoding("utf-8");
-	
+
 	String realFolder = "C:/jspworks/jwbook2/src/main/webapp/upload";
 	//5가지의 생성자 - request, 업로드폴더경로, 파일사이즈(5MB), 인코딩, 중복파일이름추가
-	MultipartRequest multi = new MultipartRequest(request, realFolder,
+	MultipartRequest multi = new MultipartRequest(request, realFolder, 
 			5*1024*1024, "utf-8", new DefaultFileRenamePolicy());
 
 	//일반 name 속성
@@ -22,7 +22,7 @@
 	//file name 속성
 	Enumeration<String> files = multi.getFileNames();
 	while(files.hasMoreElements()){
-		String fname = files.nextElement(); //파일의 name 속성
+		String fname = files.nextElement();  //파일의 name 속성
 		String filename = multi.getFilesystemName(fname); //업로드된 파일
 		String original = multi.getOriginalFileName(fname); //원본 파일
 		String type = multi.getContentType(fname); //컨텐츠 유형
@@ -30,12 +30,12 @@
 		//파일의 용량 알기 (file 객체 생성)
 		File file = multi.getFile(fname);
 		
-		out.println("업로드된 파일 이름: " + filename + "<br>");
+		out.println("업로된 파일 이름: " + filename + "<br>");
 		out.println("원본 파일 이름: " + original + "<br>");
 		out.println("파일 컨텐츠 유형: " + type + "<br>");
 		
-		if(file !=null){
+		if(file != null){
 			out.println("파일 크기: " + file.length() + "B");
 		}
-	}	
+	}
 %>

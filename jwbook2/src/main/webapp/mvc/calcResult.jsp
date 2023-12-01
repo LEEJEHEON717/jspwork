@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>계산 결과</title>
 </head>
 <body>
 	<h2>계산 결과</h2>

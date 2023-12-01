@@ -19,24 +19,25 @@
 			<select name="select">
 			<c:forEach items="${product.productList}" var="product">
 				<%-- <option>${product}</option> --%>
-				<option><c:out value="${product}" /></option>	
+				<option><c:out value="${product}" /></option>
 			</c:forEach>
 			<!-- <option value="사과">사과</option> -->
 			<%-- <% 
-				/* for(int i=0; i<product.getProductList().length; i++){ */
+				/*for(int i=0; i<product.getProductList().length; i++){
 					/* out.println(product.getProductList()[i]); */
-                /*out.println("<option>" + product.getProductList()[i] + "<option>");
-				} */
-				
-				// for(자료형 변수 : 배열이름){출력 : 변수}
+					/*out.println("<option>" + product.getProductList()[i] 
+									+ "</option>");
+				}*/
+				//for(자료형 변수 : 배열이름){출력: 변수 }
 				for(String item : product.getProductList()){
 					out.println("<option>" + item + "</option>");
 				}
 			%> --%>
+			
 			</select>
 			<input type="submit" value="선택">
 		</form>
-		
+	
 	</div>
 </body>
 </html>
