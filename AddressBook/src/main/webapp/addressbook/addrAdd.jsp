@@ -11,12 +11,11 @@
 <jsp:setProperty property="tel" name="addrBook"/>
 <jsp:setProperty property="email" name="addrBook"/>
 <jsp:setProperty property="gender" name="addrBook"/>
-<!-- AddrBookDAO dbDAO = new AddrBookDAO()와 같음
-	 scope="application"은 프로그램이 종료될때까지 유지된다. (request, session)이 있음 -->
-<jsp:useBean id="abDAO" class="addressbook.AddrBookDAO" scope="application"/>
-<%
-	//주소 추가
-	abDAO.addAddrBook(addrBook);
+<!-- AddrBookDAO dbDAO = new AddrBookDAO()와 같음 
+     scope="application"은 프로그램이 종료될때까지 유지된다. (request, session)이 있음 -->
+<jsp:useBean id="abDAO" class="addressbook.AddrBookDAO" scope="application" />
+<% 
+   abDAO.addAddrBook(addrBook); //주소 추가
 %>
 
 <div id="container">
@@ -27,5 +26,5 @@
 	<p>이메일: <%=addrBook.getEmail() %> </p>
 	<p>성별: <%=addrBook.getGender() %> </p>
 	<hr>
-	<p><a href="addrList.jsp">목록보기</a></p>
+	<p><a href="addrList.jsp">목록 보기</a></p>
 </div>

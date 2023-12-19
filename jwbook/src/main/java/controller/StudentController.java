@@ -13,11 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 import student.Student;
 import student.StudentDAO;
 
-@WebServlet("*.do") // '/'루트 경로 아래에 do로 끝나는 확장자인 파일이 올수 있음
+@WebServlet("*.do") //'/'루트 경로 아래에 do로 끝나는 확장자인 파일이 올수 있음
 public class StudentController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	StudentDAO sDAO;
-       
+    StudentDAO sDAO;
+	
     public StudentController() {
         sDAO = new StudentDAO();
     }
@@ -35,11 +35,12 @@ public class StudentController extends HttpServlet {
 		
 		//경로(uri) 설정 - 커맨드패턴(command)
 		//http://localhost:8080/student/studentlist.jsp
-		//맨 뒤 경로 추출 - lastIndextOf('/')
+		//맨 뒤 경로 추출 - lastIndextOf('/'),
 		//subString(1, 5) : 1번 4번까지 추출함
-		//subString(0) 1번 인덱스부터 문자열의 끝까지 추출함
+		//subString(0): 0번 인덱스부터 문자열의 끝까지 추출함
 		String uri = request.getRequestURI();
 		String command = uri.substring(uri.lastIndexOf("/"));
+		System.out.println(uri);
 		System.out.println(uri.lastIndexOf("/"));
 		System.out.println(command);
 		
@@ -72,8 +73,8 @@ public class StudentController extends HttpServlet {
 			sDAO.insertStudent(s);
 			nextPage = "/studentlist.do";
 		}
-	
-		RequestDispatcher dispatch =
+		
+		RequestDispatcher dispatch = 
 				request.getRequestDispatcher(nextPage);
 		dispatch.forward(request, response);
 	}

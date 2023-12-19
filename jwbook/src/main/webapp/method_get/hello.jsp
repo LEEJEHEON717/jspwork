@@ -8,7 +8,8 @@
 </head>
 <body>
 	<h2>쿼리 스트링(query string) 연습</h2>
+	
 	<h3><a href="greeting.jsp">인사하기</a></h3>
-	<h3><a href="greeting.jsp?cnt=3">3번 인사하기</a></h3>
+	<h3><a href="greeting.jsp?cnt=3">인사 3번하기 </a></h3>
 </body>
 </html>

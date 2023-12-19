@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 공통 스타일 */
+*{margin: 0; padding: 0;}
+#container{width: 90%; margin: 30px auto 100px;}
+ul li{list-style: none;}
+a{text-decoration: none;}
+
+/* 회원 가입 스타일 */
+#join{width: 500px; margin: 20px auto;}
+#join form{margin: 20px auto;}
+legend {margin: 10px;}
+form ul li{margin: 20px;}
+form ul .li button{margin-left: 16px;}
+form ul .li button{margin-bottom: 16px;}
+form .button button{padding-right: 5px;}
+form label{width: 120px; float: left; padding-left: 20px;}
+form input{padding: 5px;}

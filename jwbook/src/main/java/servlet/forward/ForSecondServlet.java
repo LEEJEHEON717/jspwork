@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Servlet implementation class ForSecondServlet
+ */
 @WebServlet("/for/second")
 public class ForSecondServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -25,7 +28,7 @@ public class ForSecondServlet extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 		
 		//first에서 name 속성값 받음
-		String name =  request.getParameter("name");
+		String name = request.getParameter("name");
 		
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");

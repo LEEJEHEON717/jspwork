@@ -50,7 +50,4 @@ public class AddrBook implements Serializable{
 	public void setRegDate(Timestamp regDate) {
 		this.regDate = regDate;
 	}
-
-
-
 }

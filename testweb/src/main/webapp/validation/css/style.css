@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+form{width: 500px; margin: 40px auto;}
+form input{width: 250px; height: 25px;}
+form ul li{list-style: none; margin: 16px;}
+form label{width: 120px; float: left;}
+form button{padding: 5px 8px;}

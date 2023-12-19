@@ -1,13 +1,19 @@
+<%@ page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%
-	String[] fruitList = request.getParameterValues("fruit");
-%>
-<p>선택한 과일</p>
-<p>
-  <% 
-	for(int i = 0; i < fruitList.length; i++){
-		out.println(fruitList[i]);
-	}
-  %>
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>오늘의 날짜와 시간</title>
+</head>
+<body>	
+	<h2>오늘의 날짜와 시간</h2>
+	<%
+		Date date = new Date();
+	    out.println(date.toLocaleString());
+	%>
+	
+	<%-- <%=date %> --%>
+</body>
+</html>

@@ -10,7 +10,7 @@ public class JDBCTest {
 		Connection conn = null;
 		
 		String driverClass = "com.mysql.cj.jdbc.Driver";
-		String url = "jdbc:mysql://127.0.0.1:3306/jwebdb?serverTime=Asia?Seoul";
+		String url = "jdbc:mysql://127.0.0.1:3306/jwebdb?serverTime=Asia/Seoul";
 		String user = "jweb";
 		String password = "pwjweb";
 		

@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원 정보</title>
-<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="../resources/css/style.css">
 </head>
 <body>
 	<jsp:include page="../header.jsp" />

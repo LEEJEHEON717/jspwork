@@ -10,8 +10,8 @@
 <body>
 	<h2>세션 생성</h2>
 	<!-- session: 내장 객체임 -->
-	<p>세션 : <%=session %></p>
-	<!-- JESEEIONID -->
+	<p>세션 : <%=session %> </p>
+	<!-- JSESSIONID -->
 	<p>세션 아이디: <%=session.getId() %></p>
 </body>
 </html>
