@@ -6,29 +6,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>상품 목록</title>
+<title>상품 편집</title>
 </head>
 <body>
 	<jsp:include page="../header.jsp" />
 	<div class="container my-3">
-	    <h2>상품 목록</h2>
+	    <h2>상품 편집</h2>
 		<div class="row" align="center">
-		<c:if test="${empty products}">
-			<p>상품이 없습니다.</p>
-		</c:if>
-		<c:if test="${not empty products}">
 			<c:forEach items="${products}" var="product">
-				<div class="col-4 my-3">
+				<div class="col-4">
 				    <img src="../upload/${product.pimage}" style="width:100%; height:50%">
 					<h3>${product.pname}</h3>
 					<p>${product.category}</p>
 					<p><fmt:formatNumber value="${product.price}"
 								pattern="#,##0" />원</p>
-					<a href="/productinfo.do?pid=${product.pid}"
-					   class="btn btn-secondary">상세정보 &raquo;</a>
+					<p>
+						<!-- edit가 update이면 수정 버튼 -->
+						<c:if test="${edit eq 'update'}">		
+							<a href="/updateform.do?pid=${product.pid}"
+							   class="btn btn-primary">수정 &raquo;</a>
+						</c:if>
+						<c:if test="${edit eq 'delete'}">		
+							<a href="/deleteproduct.do?pid=${product.pid}"
+							   onclick="return confirm('정말로 삭제하겠습니까?')"
+							   class="btn btn-danger">삭제 &raquo;</a>
+						</c:if>
+					</p>
 				</div>
 			</c:forEach>
-		</c:if>
 		</div>
 	</div>
 	<jsp:include page="../footer.jsp" />

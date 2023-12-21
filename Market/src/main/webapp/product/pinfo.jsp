@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"  %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,6 +35,7 @@
 						name="addform">
 					<!-- 상품 주문 버튼을 클릭하면 폼이 전송되어야 함 -->
 					<a href="#" onclick="addToCart()" class="btn btn-success">상품주문</a>
+					<a href="/cart.do" class="btn btn-warning">장바구니</a>
 					<a href="/productlist.do" class="btn btn-secondary">상품목록 &raquo;</a>
 				</form>
 			</div>
